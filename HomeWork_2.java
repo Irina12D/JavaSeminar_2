@@ -112,6 +112,7 @@ public class HomeWork_2 {
         return arr;
     }
 
+    // сортировка с выводом результатов в файл logArray.txt	
     static int[] sort(int[] mas)
     {
         Logger logger = Logger.getAnonymousLogger();
@@ -141,8 +142,7 @@ public class HomeWork_2 {
                     mas[i + 1] = temp;
                     obmen = true;
                 }
-            String log_Str = "Iteration no " + (k+1) + "\n" + Arrays.toString(mas) + "\n";   
-            logger.info(log_Str);
+            logger.info("Iteration no " + (k+1) + "\n" + Arrays.toString(mas) + "\n");
     	}
         logger.info(" \nTotalresult: the array is sorted in " + k + " iterations");
         return mas;
